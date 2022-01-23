@@ -6,8 +6,8 @@
       <class name="com.pb.ctest.helper.RunCucumberTest">
         <methods>
           <include name="setUpClass"/>
+          <include name="runScenario" invocation-numbers="0 1"/>
           <include name="tearDownClass"/>
-          <include name="runScenario" invocation-numbers="0"/>
         </methods>
       </class> <!-- com.pb.ctest.helper.RunCucumberTest -->
     </classes>

@@ -6,24 +6,26 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.testng.annotations.Listeners;
+
+import com.aventstack.extentreports.testng.listener.ExtentITestListenerClassAdapter;
+
 
 public class TestBase 
 {
-	public static WebDriver driver=null;
-
-	public void setUpDriver()
+	private WebDriver driver;
+	
+	public WebDriver getDriver()
 	{
-		System.setProperty("webdriver.chrome.driver",Constants.MAC_CHROME_DRIVER);
-		ChromeOptions chromeOptions = new ChromeOptions();
-		driver = new ChromeDriver(chromeOptions);
-       
-		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-    }
-    
-    public void closeDriver()
-    {
-        driver.quit();
-    }
+		return driver;
+	}
+	
+	public void setDriver()
+	{
+		System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "//drivers//chromedriverm");
 
+		driver = new ChromeDriver();
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		driver.manage().window().maximize();
+	}
 }

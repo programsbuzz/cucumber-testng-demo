@@ -1,0 +1,8 @@
+<suite name="Regression" parallel="none">
+  
+     <test name="MyTest">
+        <classes>
+            <class name="com.pb.ctest.helper.RunCucumberTest" />
+        </classes>
+    </test>
+</suite>

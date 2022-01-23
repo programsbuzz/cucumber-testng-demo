@@ -1,31 +1,31 @@
 package com.pb.ctest.steps;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
 import com.pb.ctest.helper.TestBase;
+import com.pb.ctest.pageobjs.AskDoubtObjs;
 import com.pb.ctest.pageobjs.LoginObjs;
 
-import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.When;
 
-public class LoginSD 
+public class AskDoubtSD 
 {
 	TestBase base;
 	WebDriver driver;
-	LoginObjs loginObj;
+	AskDoubtObjs askDoubtObj;
 	
-	public LoginSD(TestBase base)
+	public AskDoubtSD(TestBase base)
 	{
 		this.base = base;
 		this.driver = base.getDriver();
-		loginObj = new LoginObjs(base);
+		askDoubtObj = new AskDoubtObjs(base);
 	}
 
-	@When("I click on Login link")
-	public void i_click_on_shop_now_btn() 
+	@When("I click on Ask Doubt Link")
+	public void i_click_on_ask_doubt_link() 
 	{
-		loginObj.clickLoginLnk();
+		askDoubtObj.clickOnAskDoubtLnk();
 	}
+
 }
