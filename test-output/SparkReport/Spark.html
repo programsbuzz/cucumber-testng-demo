@@ -3,15 +3,15 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="utf-8">
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <title></title>
 <link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
 <link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
-<link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@83e4e8776725a49f9e738b19d1e718e7404d6c19/spark/css/spark-style.css" rel="stylesheet" />
+<link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@d6562a79075e061305ccfdb82f01e5e195e2d307/spark/css/spark-style.css" rel="stylesheet" />
 <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-<script src="https://cdn.rawgit.com/extent-framework/extent-github-cdn/7cc78ce/spark/js/jsontree.js"></script>
-<style type="text/css"></style></head><body class="spa -report standard">
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@7cc78ce/spark/js/jsontree.js"></script>
+<style type="text/css"></style></head><body class="spa bdd-report standard">
   <div class="app">
     <div class="layout">
 <div class="header navbar">
@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary"></span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Jan 24, 2022 01:14:05 AM</span></a>
+<a href="#"><span class="badge badge-primary">Jan 24, 2022 01:21:06 AM</span></a>
 </li>
 </ul>
 </div>
@@ -79,7 +79,7 @@
 <li class="dropdown">
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
 <ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
-<a class="dropdown-item" href="#">cucumber</a>
+<a class="dropdown-item" href="#">@SmokeTest</a><a class="dropdown-item" href="#">@AskDoubt</a>
 </ul>
 </li>
 </ul>
@@ -89,91 +89,100 @@
           author=""
           tag=""
           device="">
-          <div class="status-avatar pass-bg">
-            <i class="fa fa-check text-white"></i>
-          </div>
           <div class="test-detail">
-            <span class="meta text-white badge badge-sm"></span>
-            <p class="name">RunCucumberTest</p>
-            <p class="text-sm"><span>01:14:05 AM</span> / <span>16.662 secs</span></p>
+            <p class="name">Title of your feature</p>
+            <p class="text-sm">
+              <span>1:21:07 AM</span> / <span>00:00:11:764</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<div class='float-right'><span class='badge badge-default'>#test-id=1</span></div>
-<h5 class="test-status text-pass">RunCucumberTest</h5>
-<span class='badge badge-success'>01.24.2022 01:14:05</span>
-<span class='badge badge-danger'>01.24.2022 01:14:22</span>
-<span class='badge badge-default'>16.662 secs</span>
+<h5 class="test-status text-pass">Title of your feature</h5>
+<span class='badge badge-success'>01.24.2022 1:21:07 AM</span>
+<span class='badge badge-danger'>01.24.2022 1:21:19 AM</span>
+<span class='badge badge-default'>00:00:11:764</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
 </div>
-<div class="m-t-10 m-l-5">Runs Cucumber Scenarios</div>
+<div class="m-t-10 m-l-5"></div>
 </div>
-</div>  <div class="mt-4">  <div class="accordion">
-      <div class="card">
-        <div class="card-header">
-          <div class="card-title">
-            <div class="node" id="2">runScenario</div>
-            <div class="status-avatar float-right pass-bg">
-               <i class="fa fa-check text-white"></i>
-            </div>
-          </div>
-        </div>
-  <div class="accordion">
-      <div class="card">
-        <div class="card-header">
-          <div class="card-title">
-            <div class="node" id="3">["Title of your scenario", "Optional[Title of your feature]"]</div>
-            <div class="status-avatar float-right pass-bg">
-               <i class="fa fa-check text-white"></i>
-            </div>
-          </div>
-        </div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>Title of your scenario</div>
+      </div>
+    </div>
         <div class="collapse">
           <div class="card-body">
-<table class="table table-sm">
-  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
-  <tbody>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>1:14:17 AM</td>
-        <td>
-          Test passed
-        </td>
-      </tr>
-  </tbody>
-</table>
-          </div>
-        </div>
+              <div class="step pass-bg" title="com.pb.ctest.steps.HomeSD.i_am_on_the_home_page()">
+                <span>Given I am on the home page</span>
+      <div>
       </div>
-      <div class="card">
-        <div class="card-header">
-          <div class="card-title">
-            <div class="node" id="4">["Verify Login", "Optional[Registration, Login and MyAccount]"]</div>
-            <div class="status-avatar float-right pass-bg">
-               <i class="fa fa-check text-white"></i>
-            </div>
-          </div>
-        </div>
-        <div class="collapse">
-          <div class="card-body">
-<table class="table table-sm">
-  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
-  <tbody>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>1:14:22 AM</td>
-        <td>
-          Test passed
-        </td>
-      </tr>
-  </tbody>
-</table>
-          </div>
-        </div>
+              </div>
+              <div class="step pass-bg" title="com.pb.ctest.steps.AskDoubtSD.i_click_on_ask_doubt_link()">
+                <span>When I click on Ask Doubt Link</span>
+      <div>
       </div>
+              </div>
+          </div>
+        </div>
   </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="7"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Registration, Login and MyAccount</p>
+            <p class="text-sm">
+              <span>1:21:19 AM</span> / <span>00:00:04:118</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Registration, Login and MyAccount</h5>
+<span class='badge badge-success'>01.24.2022 1:21:19 AM</span>
+<span class='badge badge-danger'>01.24.2022 1:21:23 AM</span>
+<span class='badge badge-default'>00:00:04:118</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=7</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="8"><span class="badge log pass-bg mr-2">Pass</span>Verify Login</div>
       </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.pb.ctest.steps.HomeSD.i_am_on_the_home_page()">
+                <span>Given I am on the home page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.pb.ctest.steps.LoginSD.i_click_on_shop_now_btn()">
+                <span>When I click on Login link</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
   </div>
 </div>
           </div>
@@ -190,22 +199,68 @@
 <div class="test-wrapper row view category-view attributes-view">
 <div class="test-list">
 <div class="test-list-tools">
-<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Tags</span></a></li></ul>
-<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">1</span></a></li></ul>
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">2</span></a></li></ul>
 </div>
 <div class="test-list-wrapper scrollable">
 <ul class="test-list-item">
 <li class="test-item">
 <div class="test-detail">
 <span class="meta">
+<span class='badge log pass-bg'>2</span>
+</span>
+<p class="name">@SmokeTest</p>
+<p class="duration text-sm">2 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@SmokeTest</h4>
+<span status="pass" class='badge log pass-bg'>2 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:21:07 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='2'>Title of your scenario</a>
+<div class="">
+<span class="badge badge-default">Title of your feature.Title of your scenario</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:21:19 AM</td>
+<td>
+<a href="#" class="linked" test-id='7' id='8'>Verify Login</a>
+<div class="">
+<span class="badge badge-default">Registration, Login and MyAccount.Verify Login</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
 <span class='badge log pass-bg'>1</span>
 </span>
-<p class="name">cucumber</p>
+<p class="name">@AskDoubt</p>
 <p class="duration text-sm">1 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>cucumber</h4>
+<h4>@AskDoubt</h4>
 <span status="pass" class='badge log pass-bg'>1 passed</span>
 </div>
 <table class='table table-sm mt-4'>
@@ -219,11 +274,11 @@
 <tbody>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>01:14:05 AM</td>
+<td>01:21:07 AM</td>
 <td>
-<a href="#" class="linked" test-id='1' id='2'>runScenario</a>
+<a href="#" class="linked" test-id='1' id='2'>Title of your scenario</a>
 <div class="">
-<span class="badge badge-default">RunCucumberTest.runScenario</span>
+<span class="badge badge-default">Title of your feature.Title of your scenario</span>
 </div>
 </td>
 </tr>
@@ -235,15 +290,6 @@
 </div>
 </div>
 <div class="test-content scrollable">
-<div class="test-content-tools">
-<ul>
-<li>
-<a class="back-to-test" href="javascript:void(0)">
-<i class="fa fa-arrow-left"></i>
-</a>
-</li>
-</ul>
-</div>
 <div class="test-content-detail">
 <div class="detail-body"></div>
 </div>
@@ -253,33 +299,33 @@
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Jan 24, 2022 01:14:05 AM</h3>
+<h3>Jan 24, 2022 01:21:06 AM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Jan 24, 2022 01:14:22 AM</h3>
+<h3>Jan 24, 2022 01:21:23 AM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
-<p class="m-b-0 text-pass">Class Passed</p>
-<h3>1</h3>
+<p class="m-b-0 text-pass">Features Passed</p>
+<h3>2</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
-<p class="m-b-0 text-fail">Class Failed</p>
+<p class="m-b-0 text-fail">Features Failed</p>
 <h3>0</h3>
 </div></div>
 </div>
 </div>
 <div class="row">
-<div class="col-md-3">
+<div class="col-md-4">
 <div class="card">
 <div class="card-header">
-<h6 class="card-title">Class</h6>
+<h6 class="card-title">Features</h6>
 </div>
 <div class="card-body">
 <div class="">
@@ -288,21 +334,21 @@
 </div>
 <div class="card-footer">
 <div><small data-tooltip='100%'>
-<b>1</b> class passed
+<b>2</b> features passed
 </small>
 </div>
 <div>
-<small data-tooltip='0%'><b>0</b> class failed,
+<small data-tooltip='0%'><b>0</b> features failed,
 <b>0</b> skipped, <b data-tooltip='0%'>0</b> others
 </small>
 </div>
 </div>
 </div>
 </div>
-<div class="col-md-3">
+<div class="col-md-4">
 <div class="card">
 <div class="card-header">
-<h6 class="card-title">Methods</h6>
+<h6 class="card-title">Scenarios</h6>
 </div>
 <div class="card-body">
 <div class="">
@@ -310,19 +356,19 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='100%'><b>1</b> methods passed</small></div>
+<div><small data-tooltip='100%'><b>2</b> scenarios passed</small></div>
 <div>
-<small data-tooltip='0%'><b>0</b> methods failed,
+<small data-tooltip='0%'><b>0</b> scenarios failed,
 <b>0</b> skipped, <b data-tooltip='%'>0</b> others
 </small>
 </div>
 </div>
 </div>
 </div>
-<div class="col-md-3">
+<div class="col-md-4">
 <div class="card">
 <div class="card-header">
-<h6 class="card-title"></h6>
+<h6 class="card-title">Steps</h6>
 </div>
 <div class="card-body">
 <div class="">
@@ -330,44 +376,44 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='100%'><b>2</b> passed</small></div>
+<div><small data-tooltip='100%'><b>4</b> steps passed</small></div>
 <div>
-<small data-tooltip='0%'><b>0</b> failed,
+<small data-tooltip='0%'><b>0</b> steps failed,
 <b>0</b> skipped, <b data-tooltip='%'>0</b> others
 </small>
 </div>
 </div>
 </div>
 </div>
-<div class="col-md-3">
-<div class="card">
-<div class="card-header">
-<h6 class="card-title">Log events</h6>
 </div>
-<div class="card-body">
-<div class="">
-<canvas id='events-analysis' width='115' height='90'></canvas>
+<div class="row"><div class="col-md-12">
+<div class="card"><div class="card-header"><p>Timeline</p></div>
+<div class="card-body pt-0"><div>
+<canvas id="timeline" height="120"></canvas>
+</div></div>
 </div>
-</div>
-<div class="card-footer">
-<div><small data-tooltip='100%'><b>2</b> events passed</small></div>
-<div>
-<small data-tooltip='0%'><b>0</b> events failed,
-<b data-tooltip='%'>0</b> others
-</small>
-</div>
-</div>
-</div>
-</div>
-</div>
+</div></div>
+<script>
+var timeline = {
+"Title of your feature":11.764,"Registration, Login and MyAccount":4.118
+};
+</script>
 <div class="row">
-<div class="col-md-4 category-container">
+<div class="col-lg-6 col-md-12 category-container">
 <div class="card">
 <div class="card-header"><p>Tags</p></div>
 <div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
 <thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
 <tr>
-<td>cucumber</td>
+<td>@SmokeTest</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@AskDoubt</td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
@@ -383,33 +429,28 @@
 <script>
 var statusGroup = {
 parentCount: 5,
-passParent: 1,
+passParent: 2,
 failParent: 0,
 warningParent: 0,
 skipParent: 0,
 childCount: 5,
-passChild: 1,
+passChild: 2,
 failChild: 0,
 warningChild: 0,
 skipChild: 0,
 infoChild: 0,
 grandChildCount: 5,
-passGrandChild: 2,
+passGrandChild: 4,
 failGrandChild: 0,
 warningGrandChild: 0,
 skipGrandChild: 0,
 infoGrandChild: 0,
 eventsCount: 5,
-passEvents: 2,
-failEvents: 0,
-warningEvents: 0,
-skipEvents: 0,
-infoEvents: 0
 };
 </script>        </div>
       </div>
     </div>
   </div>
-<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@5cf22a596531402644b8523470526952516f345f/spark/js/spark-script.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@d6562a79075e061305ccfdb82f01e5e195e2d307/spark/js/spark-script.js"></script>
 <script type="text/javascript"></script></body>
 </html>
