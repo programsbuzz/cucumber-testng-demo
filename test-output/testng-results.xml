@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-01-24T01:21:06 IST" name="Default suite" finished-at="2022-01-24T01:21:23 IST" duration-ms="17562">
+  <suite started-at="2022-03-27T05:01:28 IST" name="Regression" finished-at="2022-03-27T05:01:57 IST" duration-ms="29391">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.pb.ctest.helper.RunCucumberTest@740cae06]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.pb.ctest.helper.RunCucumberTest@30ee2816]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2022-01-24T01:21:06 IST" name="Default test" finished-at="2022-01-24T01:21:23 IST" duration-ms="17562">
+    <test started-at="2022-03-27T05:01:28 IST" name="MyTest" finished-at="2022-03-27T05:01:57 IST" duration-ms="29391">
       <class name="com.pb.ctest.helper.RunCucumberTest">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.pb.ctest.helper.RunCucumberTest@740cae06]" started-at="2022-01-24T01:21:06 IST" name="setUpClass" finished-at="2022-01-24T01:21:06 IST" duration-ms="813" status="PASS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.pb.ctest.helper.RunCucumberTest@30ee2816]" started-at="2022-03-27T05:01:28 IST" name="setUpClass" finished-at="2022-03-27T05:01:29 IST" duration-ms="260" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@42ed89da]]>
+                <![CDATA[org.testng.TestRunner@52227eb2]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.pb.ctest.helper.RunCucumberTest@740cae06]" started-at="2022-01-24T01:21:07 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-01-24T01:21:19 IST" duration-ms="12052" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.pb.ctest.helper.RunCucumberTest@30ee2816]" started-at="2022-03-27T05:01:29 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-03-27T05:01:53 IST" duration-ms="23882" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -30,14 +30,57 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA["Optional[Title of your feature]"]]>
+                <![CDATA["Optional[Ask Doubt Feature]"]]>
               </value>
             </param>
           </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//dfdf"}
+  (Session info: chrome=99.0.4844.83)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.1', revision: 'e8fcc2cecf'
+System info: host: 'Taruns-MBP.lan', ip: 'fe80:0:0:0:1087:bf2b:21a9:87f8%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '11.3', java.version: '16.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [83a02bc8d4d19b1984ea0b6f86f132a6, findElement {using=xpath, value=//dfdf}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.83, chrome: {chromedriverVersion: 98.0.4758.80 (7f0488e8ba0d8..., userDataDir: /var/folders/gl/sxfvlyrd7g9...}, goog:chromeOptions: {debuggerAddress: localhost:64459}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:64459/devtoo..., se:cdpVersion: 99.0.4844.83, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 83a02bc8d4d19b1984ea0b6f86f132a6]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//dfdf"}
+  (Session info: chrome=99.0.4844.83)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.1', revision: 'e8fcc2cecf'
+System info: host: 'Taruns-MBP.lan', ip: 'fe80:0:0:0:1087:bf2b:21a9:87f8%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '11.3', java.version: '16.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [83a02bc8d4d19b1984ea0b6f86f132a6, findElement {using=xpath, value=//dfdf}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.83, chrome: {chromedriverVersion: 98.0.4758.80 (7f0488e8ba0d8..., userDataDir: /var/folders/gl/sxfvlyrd7g9...}, goog:chromeOptions: {debuggerAddress: localhost:64459}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:64459/devtoo..., se:cdpVersion: 99.0.4844.83, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 83a02bc8d4d19b1984ea0b6f86f132a6
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+at com.pb.ctest.steps.AskDoubtSD.i_click_on_ask_doubt_link(AskDoubtSD.java:30)
+at ✽.I click on Ask Doubt Link(file:///Users/tarungoswami/git/cucumber-testng-demo/src/test/resources/features/AskDoubt.feature:9)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.pb.ctest.helper.RunCucumberTest@740cae06]" started-at="2022-01-24T01:21:19 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-01-24T01:21:23 IST" duration-ms="4128" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.pb.ctest.helper.RunCucumberTest@30ee2816]" started-at="2022-03-27T05:01:53 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-03-27T05:01:57 IST" duration-ms="4828" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -53,11 +96,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.pb.ctest.helper.RunCucumberTest@740cae06]" started-at="2022-01-24T01:21:23 IST" name="tearDownClass" finished-at="2022-01-24T01:21:23 IST" duration-ms="461" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.pb.ctest.helper.RunCucumberTest@30ee2816]" started-at="2022-03-27T05:01:57 IST" name="tearDownClass" finished-at="2022-03-27T05:01:57 IST" duration-ms="14" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
       </class> <!-- com.pb.ctest.helper.RunCucumberTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- MyTest -->
+  </suite> <!-- Regression -->
 </testng-results>

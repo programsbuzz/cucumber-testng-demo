@@ -1,4 +1,7 @@
 <suite name="Regression" parallel="none">
+<listeners>
+<listener class-name="com.aventstack.extentreports.testng.listener.ExtentITestListenerClassAdapter"></listener>
+</listeners>
   
      <test name="MyTest">
         <classes>

@@ -1,5 +1,6 @@
 package com.pb.ctest.steps;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
 import com.pb.ctest.helper.TestBase;
@@ -23,9 +24,10 @@ public class AskDoubtSD
 	}
 
 	@When("I click on Ask Doubt Link")
-	public void i_click_on_ask_doubt_link() 
+	public void i_click_on_ask_doubt_link() throws InterruptedException 
 	{
 		askDoubtObj.clickOnAskDoubtLnk();
+		driver.findElement(By.xpath("//dfdf"));
 	}
 
 }

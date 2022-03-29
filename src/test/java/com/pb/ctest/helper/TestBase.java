@@ -1,16 +1,10 @@
 package com.pb.ctest.helper;
 
 import java.time.Duration;
-import java.util.concurrent.TimeUnit;
-
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
-import org.testng.annotations.Listeners;
 
-
-
-public class TestBase 
+public class TestBase
 {
 	private WebDriver driver;
 	

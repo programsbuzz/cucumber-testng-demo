@@ -1,5 +1,5 @@
 @AskDoubt
-Feature: Title of your feature
+Feature: Ask Doubt Feature
 
 	Background: Ask Doubt Background 
 		Given I am on the home page 
